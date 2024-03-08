@@ -20,7 +20,6 @@ pandera = {extras = ["io"], version = "^0.18.0"}
 pandas = "^2.2.1"
 sqlalchemy = "^2.0.28"
 psycopg2-binary = "^2.9.9"
-dotenv-python = "^0.0.1"
 python-dotenv = "^1.0.1"
 duckdb = "^0.10.0"
 multimethod = "^1.11.2"
