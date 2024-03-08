@@ -1,5 +1,5 @@
 from pandas import Timestamp
-from pandera import DataFrameSchema, Column, Check, Index, MultiIndex
+from pandera import Check, Column, DataFrameSchema, Index, MultiIndex
 
 schema = DataFrameSchema(
     columns={
@@ -34,9 +34,7 @@ schema = DataFrameSchema(
                 Check.greater_than_or_equal_to(
                     min_value=Timestamp("2020-01-01 00:00:00")
                 ),
-                Check.less_than_or_equal_to(
-                    max_value=Timestamp("2020-03-01 00:00:00")
-                ),
+                Check.less_than_or_equal_to(max_value=Timestamp("2020-03-01 00:00:00")),
             ],
             nullable=False,
             unique=False,

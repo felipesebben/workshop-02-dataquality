@@ -17,3 +17,8 @@ graph TD;
     Y -->|Falha| Z[Alerta de Erro];
     Y -->|Sucesso| D[Salvar no DuckDB];
 ```
+
+
+## Contrato de dados
+
+::: app.schema.ProdutoSchema

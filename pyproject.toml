@@ -17,6 +17,19 @@ black = "^24.2.0"
 pytest = "^8.0.2"
 pydantic = "^2.6.3"
 pandera = {extras = ["io"], version = "^0.18.0"}
+pandas = "^2.2.1"
+sqlalchemy = "^2.0.28"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+duckdb = "^0.10.0"
+multimethod = "^1.11.2"
+
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:base implementation will eventually ignore annotations as `singledispatch does`:DeprecationWarning",
+    "ignore:use `parametric\\(<base>, <func>\\)` as a type instead:DeprecationWarning"
+]
 
 
 [build-system]
@@ -24,10 +37,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
-format = """
-isort .
-black .
-"""
+format = "isort . && black ."
 kill = "kill -9 $(lsof -t -i :8000)"
 test = "pytest -v"
 run = """
