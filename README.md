@@ -61,3 +61,8 @@ Nesse caso, executamos um processo de validação do banco de dados. O fluxo é 
 - Em seguida, configuramos as variáveis do banco usando variáveis de ambiente (jamais passando credenciais no código!).
 - Lemos o banco. Em paralelo, utilizamos o [Pandera](https://github.com/unionai-oss/pandera) para gerar uma validação do Schema de Entrada do banco.
     - O pandera faz uma série de inferências a partir da amostra de dados definidas pela query que fazemos do banco (pode ser o banco todo ou apenas uma amostragem definida pelo programa).
+
+## Contato ##
+Para dúvidas, feedback ou qualquer contato:
+- Email: felipesebben@yahoo.com.br / sebbencomdoisb@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/felipe-sebben)
